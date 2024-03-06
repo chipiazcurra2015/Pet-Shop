@@ -12,6 +12,7 @@ function App() {
                     </a>
 
                     <nav class="navegacion">
+                        
                         <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> 
                         <a href="cursos.html" class="navegacion__enlace">Alimento</a>
                         <a href="contacto.html" class="navegacion__enlace">Contacto</a>
