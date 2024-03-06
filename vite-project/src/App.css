@@ -1,0 +1,68 @@
+:root {
+  --fuenteHeding: 'PT Sans', sans-serif;
+  --fuenteParrafos: 'Open Sans', sans-serif;
+
+  --primario: #784d3c;
+  --blanco: #ffffff;
+  --negro: #0000;
+  --gris: #e1e1e1;
+}
+
+.html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+.body{
+  background-image: url('./assets/background.jpg');
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+
+/**Globales**/
+.contenedor{
+  max-width: 50rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4{
+  font-family: var(--fuenteHeding);
+}
+
+img{
+  max-width: 100%;
+}
+
+/**Utilidades**/
+.no-margin{
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.centrar-texto{
+  text-align: center;
+}
+
+.logo__nombre{
+  color: white;
+}
+@media (min-width: 480px) {
+  .barra{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem ;
+  } 
+}
+
+.navegacion__enlace{
+  color: #ffffff;
+}
