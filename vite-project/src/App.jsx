@@ -11,7 +11,7 @@ function App() {
                         <h1 class="logo__nombre no-margin centrar-texto">Pet-<span class="logo__bold">Shop</span></h1>
                     </a>
 
-                    <nav class="navegacion centrar-texto">
+                    <nav class="navegacion">
                         <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> 
                         <a href="cursos.html" class="navegacion__enlace">Alimento</a>
                         <a href="contacto.html" class="navegacion__enlace">Contacto</a>
