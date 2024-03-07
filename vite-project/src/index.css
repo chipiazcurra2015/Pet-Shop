@@ -1,9 +1,26 @@
 
-.fondo{
-    background-image: url('https://s1.1zoom.me/b5050/155/Dogs_Amstaff_Snout_Glance_Black_background_595956_3840x2400.jpg');
-    height: 816px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+@media (min-width: 480px) {
+    .fondo{
+        background-image: url('https://s1.1zoom.me/b5050/155/Dogs_Amstaff_Snout_Glance_Black_background_595956_3840x2400.jpg');
+        height: 700px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0;
+    }
 }
+    @media (min-width: 430px)and(min-height: 932px) {
+        .fondo{
+            width: 100%;
+        }
+      }
+ .fondo{
+        background-image: url('https://s1.1zoom.me/b5050/155/Dogs_Amstaff_Snout_Glance_Black_background_595956_3840x2400.jpg');
+        height: 855px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0;
+    }

@@ -5,19 +5,21 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-        <div class="contenedor header">
+        <div class="contenedor">
                 <div class="barra">
                     <a class="logo" href="index.html">
                         <h1 class="logo__nombre no-margin centrar-texto">Pet-<span class="logo__bold">Shop</span></h1>
                     </a>
 
-                    <nav class="navegacion">
+                    <nav class="navegacion centrar-texto">
                         <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> 
                         <a href="cursos.html" class="navegacion__enlace">Alimento</a>
                         <a href="contacto.html" class="navegacion__enlace">Contacto</a>
                     </nav>
-                </div>
             </div>
+        
+        </div>
+            
               )
 }
 
