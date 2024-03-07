@@ -1,8 +1,8 @@
 
 @media (min-width: 480px) {
     .fondo{
-        background-image: url('https://s1.1zoom.me/b5050/155/Dogs_Amstaff_Snout_Glance_Black_background_595956_3840x2400.jpg');
-        height: 700px;
+        background-image: url('./assets/mascotas.jpg');
+        height: 336px;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -16,11 +16,21 @@
         }
       }
  .fondo{
-        background-image: url('https://s1.1zoom.me/b5050/155/Dogs_Amstaff_Snout_Glance_Black_background_595956_3840x2400.jpg');
-        height: 855px;
+        background-image: url('./assets/mascotas.jpg');
+        height: 336px;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         margin: 0;
+    }
+    .loco{
+       background-color: rgba(0, 0, 0, 0.5);
+       padding-bottom: 1rem;
+    }
+    @media (min-width: 480px) {
+        .loco{
+           background-color: rgba(0, 0, 0, 0.5);
+           padding-bottom: 0;
+        }
     }
