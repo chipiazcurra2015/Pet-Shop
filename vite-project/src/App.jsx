@@ -1,26 +1,25 @@
 import { useState } from 'react'
+import {BrowserRouter,Route, Routes} from "react-router-dom"
 import './App.css'
+import Landing from './Views/Landing/Landing'
+import Home from './Views/Home/Home'
+import Create from './Views/Create/Create'
+import Detail from './Views/Detail/Detail'
+import NavBar from './Component/NavBar/NavBar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-        <div class="contenedor">
-                <div class="barra">
-                    <a class="logo" href="index.html">
-                        <h1 class="logo__nombre no-margin centrar-texto">Pet-<span class="logo__bold">Shop</span></h1>
-                    </a>
-
-                    <nav class="navegacion">
-                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> 
-                        <a href="cursos.html" class="navegacion__enlace">Alimento</a>
-                        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                    </nav>
-            </div>
-        
-        </div>
-            
-              )
+    <BrowserRouter>
+        <NavBar/>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/create" element={<Create />} />
+            <Route path="/detail/:id" element={<Detail />} />
+         </Routes>
+  </BrowserRouter>
+     )
 }
 
 export default App
