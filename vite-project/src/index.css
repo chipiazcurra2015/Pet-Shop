@@ -1,36 +1,12 @@
 
-@media (min-width: 480px) {
-    .fondo{
-        background-image: url('./assets/mascotas.jpg');
-        height: 336px;
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 0;
-    }
-}
-    @media (min-width: 430px)and(min-height: 932px) {
-        .fondo{
-            width: 100%;
-        }
-      }
+
  .fondo{
         background-image: url('./assets/mascotas.jpg');
-        height: 336px;
+        height: 442px;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         margin: 0;
     }
-    .loco{
-       background-color: rgba(0, 0, 0, 0.5);
-       padding-bottom: 1rem;
-    }
-    @media (min-width: 480px) {
-        .loco{
-           background-color: rgba(0, 0, 0, 0.5);
-           padding-bottom: 0;
-        }
-    }
+    

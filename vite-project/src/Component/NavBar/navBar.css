@@ -1,0 +1,18 @@
+.nav-conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-img{
+    width: 7%;
+    margin-bottom: -4px;
+}
+.nav-cont-link a{
+    color: rgb(58, 182, 182);
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+.nav-cont-search input{
+    width: 80%; ;
+}
