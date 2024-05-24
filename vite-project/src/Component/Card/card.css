@@ -1,0 +1,9 @@
+.card-conteiner{
+    border: solid 2px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: chocolate;
+    width: 20rem;
+    margin: 2rem;
+}
