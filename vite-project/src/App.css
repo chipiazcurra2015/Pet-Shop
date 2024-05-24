@@ -24,7 +24,7 @@
 
 /**Globales**/
 .contenedor{
-  max-width: 50rem;
+  max-width: 100rem;
   width: 90%;
   margin: 0 auto;
   padding-top: 1rem;
@@ -50,38 +50,4 @@ img{
 }
 .centrar-texto{
   text-align: center;
-}
-
-.logo__nombre{
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-@media (min-width: 480px) {
-  .barra{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -10rem ;
-  } 
-}
-.navegacion{
-  margin-top: 5px;
-}
-.navegacion__enlace{
-  display: flex;
-  justify-content: center;
-  color: yellow;
-  font-size: 1.5rem;
-  margin: 2rem;
-}
-@media (min-width: 480px) {
-  .navegacion__enlace{
-    color: yellow;
-    font-size: 1.8rem;
-    margin: 2rem;
-    display: initial;
-    text-align: center;
-    align-items: center;
-  }    
 }
