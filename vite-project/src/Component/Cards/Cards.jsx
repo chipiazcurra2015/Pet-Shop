@@ -5,7 +5,7 @@ import './cards.css'
 const Cards = ({productos}) => {
   return (
     <div className='cards-conteiner'>
-       {productos.map(p => <Card nombre={p.nombre} kg={p.kg} marca={p.marca} imagen={p.imagen}/> )}
+       {productos.map(p => <Card key={p.kg} nombre={p.nombre} kg={p.kg} marca={p.marca} imagen={p.imagen}/> )}
     </div>
   )
 }
