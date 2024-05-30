@@ -2,7 +2,8 @@ const { User } = require ("../db");
 const { Op, where } = require('sequelize');
 const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const JWT_SECRET="mi frase secreta";
+//const JWT_SECRET="mi frase secreta";
+const JWT_SECRET= process.env;
 const validaCampos = require('../utils/validation');
 require('dotenv').config();
 
@@ -10,8 +11,8 @@ const loginUserController = async (email, password) => {
 		// if (validaCampos(email, userPassword)) throw new Error('Campos vacios')
 		const user =await User.findOne({email});
 		if(!user || !bcryptjs.compareSync(password, user.password)) throw new Error('Credenciales incorrectas');
-		const payload = { _id: user.id, email, firstname: user.firstname, lastname: user.lastname }
-		const token = jwt.sign(payload, process.env.JWT_SECRET);
+		const payload = { id: user.id, email, firstname: user.firstname, lastname: user.lastname }
+		const token = jwt.sign(payload, `${JWT_SECRET}`);
 		return {token, ...payload}; 
   };
 
