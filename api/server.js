@@ -1,6 +1,5 @@
 const app = require("./src/app");
-//const PORT = process.env;
-const PORT = 3001;
+const PORT = process.env.PORT;
 const { conn } = require('./src/db.js');
 
 //alter - force
