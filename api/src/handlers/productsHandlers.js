@@ -1,34 +1,32 @@
-const{createProductController} = require ("../controllers/productscontrolers")
-
 const getProductsHandler = (req, res) => {
-    res.status(200).send("Estoy en producto");
-}
-const createProductHandler = async (req, res)=> {
-    try {
-        const {brand,
-            stocks,
-            price,
-            image,
-        } = req.body
-        const response = await createProductController(
-            brand,
-            stocks,
-            price,
-            image,
-            );
-            res.status(200).json(response);
-        } catch (error) {
-            res.status(400).json({error:error.message})
-        }
+    res.status(200).send("Estoy en productos");
 };
 
 const getProductHandler = (req, res) => {
     res.send("Estoy en producto");
-}
+};
 
+const createProductHandler = (req, res) => {
+    res.send("Voy a crear un producto");
+};
+
+const deleteProductHandler = (req, res) => {
+    res.send("Voy a eliminar un producto");
+};
+
+const putProductsHandler = (req, res) => {
+    res.send("Voy a actualizar un producto");
+};
+
+const getProductByIdHandler = (req, res) => {
+    res.send("Voy a obtener un producto por ID");
+};
 
 module.exports = {
-    getProductHandler,
+    createProductHandler,
     getProductsHandler,
-    createProductHandler
-}
+    getProductHandler,
+    deleteProductHandler,
+    putProductsHandler,
+    getProductByIdHandler,
+};
