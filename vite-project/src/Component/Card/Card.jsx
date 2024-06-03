@@ -14,6 +14,7 @@ const Card = ({nombre,kg,marca,precio,imagen}) => {
           <h3>Marca: {marca}</h3>
       
           <h3>Precio: {precio}</h3>
+          <h1> Se Actulizo todo</h1>
         </div>
         
     </div>
