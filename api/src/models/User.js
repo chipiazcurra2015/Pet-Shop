@@ -1,33 +1,27 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) =>{
-    sequelize.define('Product',{
+    sequelize.define('User',{
          id: {
             type: DataTypes.UUID,
             defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
-         },
-         brand: {
+          },
+         firstname: {
             type: DataTypes.STRING,
             allowNull: false,
          },
-         description: {
+         lastname: {
             type: DataTypes.STRING,
             allowNull: false,
          },
-         kilogram: {
-            type: DataTypes.FLOAT,
+         email: {
+            type: DataTypes.STRING,
             allowNull: false,
+            isEmail: true,
+            unique: true,
          },
-         stock: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-         },
-         price: {
-            type: DataTypes.FLOAT,
-            allowNull: false,
-         },
-         image: {
+         password: {
             type: DataTypes.STRING,
             allowNull: false,
          }

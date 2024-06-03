@@ -6,7 +6,7 @@ const pool = mysql.createPool({
     host:"localhost",
     user:"root",
     password:"1234",
-    database:"pet-shop"
+    database:"mascotas"
 }) 
 
 app.listen(3001, () => {
