@@ -3,11 +3,10 @@ import Cards from '../../Component/Cards/Cards'
 import Slider from '../../Component/Slider/Slider'
  
 const Home = () => {
-
-  const productos= [{nombre:"Sabrosito",kg:50,marca:["premium"," grasas"],imagen:'imagen'},
-              {nombre:"Quality",kg:70,marca:["perro"," grasas"],imagen:"imagen"},
-              {nombre:"Mishi",kg:100,marca:["gato","cero grasas"],imagen:"imagen"},
-              {nombre:"Perritos",kg:85,marca:["premium"," grasas"],imagen:"imagen"}]
+  const productos= [{price:50,stock:"hay",id:1, brand:"Sabrosito",kilogram:50,description:["premium"," grasas"],image:'imagen'},
+              {price:50,stock:"hay", id:2,brand:"Quality",kilogram:70,description:["perro"," grasas"],image:"imagen"},
+              {price:50,stock:"hay",id:3,brand:"Mishi",kilogram:100,description:["gato","cero grasas"],image:"imagen"},
+              {price:50,stock:"hay",id:4,brand:"Perritos",kilogram:85,description:["premium"," grasas"],image:"imagen"}]
   return (
     <div>
       <Slider/>
