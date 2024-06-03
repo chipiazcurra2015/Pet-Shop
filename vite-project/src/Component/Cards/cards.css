@@ -1,6 +1,6 @@
 .cards-conteiner{
     display: flex;
     justify-content: center;
-    align-items: center;    
-    height: 55rem;
+    align-items: center; 
+    margin: 0 7rem 0 7rem; 
 }

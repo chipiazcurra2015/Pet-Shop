@@ -20,10 +20,7 @@ const createProductHandler = async (req, res)=> {
         } catch (error) {
             res.status(400).json({error:error.message})
         }
-        console.log("ACA" +req.body)
 };
-
-
 
 const getProductHandler = (req, res) => {
     res.send("Estoy en producto");
